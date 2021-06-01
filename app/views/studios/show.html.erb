@@ -1,0 +1,15 @@
+<h2>Studio Details</h2>
+
+<section id="attributes">
+  <h3>Studio Name: </h3>
+  <%= @studio.name %>
+  <h4>Location: </h4>
+  <%= @studio.location %>
+</section>
+
+<section id="movies">
+  <h4>Movies Produced: </h4>
+  <% @studio.movies.each do |movie| %>
+    <p><%= movie.title %></p>
+  <% end %>
+</section>
