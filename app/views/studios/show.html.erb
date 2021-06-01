@@ -13,3 +13,10 @@
     <p><%= movie.title %></p>
   <% end %>
 </section>
+
+<section id="actors">
+  <h4>Featured Talent: </h4>
+  <% @studio.movies.each do |movie| %>
+    <%= "#{movie.actor_list_params}" %>
+  <% end %>
+</section>
